@@ -33,11 +33,15 @@
     "prettier": "^2.8.2",
     "vite": "^4.0.0"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
-    "**/*.{js,jsx}": [
-      "npm run escheck",
-      "npm run esfix",
-      "npm run prettier"
+    "*.{js,jsx}": [
+      "eslint ./ --fix",
+      "prettier --write ."
     ]
   }
 }
