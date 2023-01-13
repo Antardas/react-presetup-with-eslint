@@ -1,12 +1,6 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
-
-
-
-
-
-
+import { useState } from 'react';
+import reactLogo from './assets/react.svg';
+import './App.css';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -25,15 +19,7 @@ function App() {
       <div className="card">
         <button
           type="button"
-
-
-
-
-
-          onClick={() =>
-            
-            
-            setCount((prevCount) => prevCount + 1)}
+          onClick={() => setCount((prevCount) => prevCount + 1)}
         >
           count is {count}
         </button>
